@@ -6,6 +6,7 @@ import SearchBar from '@/components/SearchBar'
 import { NewsDataType } from '@/types'
 import axios from 'axios'
 import BreakingNews from '@/components/BreakingNews'
+import Categories from '@/components/Categories'
 
 const Home = () => {
   const { top : safeTop } = useSafeAreaInsets();
@@ -30,6 +31,12 @@ const Home = () => {
     }
   }
 
+  const onCatChange = (category: string) => {
+    console.log('Category: ', category);
+    //setNews([]);
+    //getNews(category);
+  }
+
   return (
     <View style={[styles.container, {paddingTop: safeTop}]}>
       <Header />
@@ -41,6 +48,7 @@ const Home = () => {
           <BreakingNews newsList={breakingNews} />
         )
       }
+      <Categories onCategoryChanged={onCatChange}/>
     </View>
   )
 }

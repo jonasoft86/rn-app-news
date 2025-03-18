@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
     },
     image:{
         width: width - 60,
-        height: 180,
+        height: 120,
         borderRadius: 20
     },
     background: {
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
         right: 0,
         top: 0,
         width: width - 60,
-        height: 180,
+        height: 120,
         borderRadius: 20
     },
     sourceInfo: {

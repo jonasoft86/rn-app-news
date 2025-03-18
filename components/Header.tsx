@@ -35,8 +35,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     userImg: {
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
         borderRadius: 30,
     }, 
     userInfo:{

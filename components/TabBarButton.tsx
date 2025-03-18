@@ -25,7 +25,7 @@ const TabBarButton = (props:any) => {
         const top = interpolate(
             scale.value,
             [0, 1],
-            [0, 8]
+            [0, 6]
         );
 
         return {
@@ -59,7 +59,7 @@ const TabBarButton = (props:any) => {
         
         <Animated.Text style={[{ 
             color,
-            fontSize: 11
+            fontSize: 10
         }, animatedTextStyle]}>
             {label}
         </Animated.Text>
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 4
+        gap: 4,
     }
 })
 

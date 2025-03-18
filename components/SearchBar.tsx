@@ -10,7 +10,7 @@ const SearchBar = (props:Props) => {
     <View style={styles.container}>
         <View style={styles.searchBar}>
             <Ionicons 
-                name='search-outline' size={20} 
+                name='search-outline' size={12} 
                 color={Colors.lightGrey} 
                 style={{ paddingTop: 10}}
             />
@@ -38,10 +38,10 @@ const styles = StyleSheet.create({
         paddingVertical: 2,
         borderRadius: 10,
         flexDirection: 'row',
-        gap: 10
+        gap: 16
     },
     searchText:{
-        fontSize: 14,
+        fontSize: 10,
         flex: 1, 
         color: Colors.darkGrey
     }

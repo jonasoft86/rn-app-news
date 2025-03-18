@@ -1,14 +1,16 @@
-import { View, StyleSheet, Text } from 'react-native'
+import { View, StyleSheet, Text, ActivityIndicator } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Header from '@/components/Header'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 import SearchBar from '@/components/SearchBar'
 import { NewsDataType } from '@/types'
 import axios from 'axios'
+import BreakingNews from '@/components/BreakingNews'
 
 const Home = () => {
   const { top : safeTop } = useSafeAreaInsets();
   const [breakingNews, setBreakingNews] = useState<NewsDataType[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getBreakingNews();
@@ -21,9 +23,10 @@ const Home = () => {
 
       if(response && response.data){
         setBreakingNews(response.data.results)
+        setIsLoading(false)
       }
     } catch (err:any) {
-      console.log(err.message)
+      console.log('Error message: ',err.message)
     }
   }
 
@@ -32,9 +35,11 @@ const Home = () => {
       <Header />
       <SearchBar />
       {
-        breakingNews.map((item, index)=>(
-          <Text key={index}>{item.title}</Text>
-        ))
+        isLoading ? (
+          <ActivityIndicator size={'large'} />
+        ): (
+          <BreakingNews newsList={breakingNews} />
+        )
       }
     </View>
   )

@@ -1,6 +1,6 @@
 
--feature1
--feature2
+- [x] #Feature 1
+- [x] #Feature 2
 
 ## App - Screens
 ![alt text](https://github.com/jonasoft86/rn-app-news/blob/main/app-images/News1.jpg) 

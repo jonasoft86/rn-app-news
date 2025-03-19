@@ -18,16 +18,16 @@ const Page = () => {
           <Animated.Text 
             style={styles.title} 
             entering={FadeInRight.delay(300).duration(500)}>
-              Stay Updated!
+              ¡Manténgase actualizado!
           </Animated.Text>
           <Animated.Text 
             style={styles.description}
             entering={FadeInRight.delay(700).duration(500)}>
-              Get breacking news
+              Ultimas noticias
             </Animated.Text>
           <Animated.View entering={FadeInDown.delay(1200).duration(500)}>
             <TouchableOpacity style={styles.btn} onPress={()=> router.replace("/(tabs)")}>
-              <Text style={styles.btnText}>Get Started</Text>
+              <Text style={styles.btnText}>Empezar</Text>
             </TouchableOpacity>
           </Animated.View>
         </View>

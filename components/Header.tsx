@@ -14,8 +14,8 @@ const Header = (props: Props) => {
                 style={styles.userImg}
             />
             <View style={{gap:3}}>
-                <Text style={styles.welcomeText}>Welcome</Text>
-                <Text style={styles.userName}>Pedrito</Text>
+                <Text style={styles.welcomeText}>Bienvenido</Text>
+                <Text style={styles.userName}>Jonathan</Text>
             </View>
         </View>
         <TouchableOpacity onPress={()=>{}}>

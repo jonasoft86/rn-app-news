@@ -7,7 +7,7 @@ export const icon = {
     ) : (
       <Ionicons name="home-outline" size={2} color={color} />
     ),
-  discover: ({ color, focused }: { color: string; focused: boolean }) =>
+  explore: ({ color, focused }: { color: string; focused: boolean }) =>
     focused ? (
       <Ionicons name="compass" size={5} color={color} />
     ) : (

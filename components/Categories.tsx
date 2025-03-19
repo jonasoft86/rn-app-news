@@ -29,7 +29,7 @@ const Categories = ({onCategoryChanged}: Props) => {
   
     return (
     <View>
-        <Text style={styles.title}>Trending Rigght Now</Text>
+        <Text style={styles.title}>Tendencia ahora mismo</Text>
         <ScrollView
             ref={scrollRef}
             horizontal
